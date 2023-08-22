@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "technical_tests_I/version"
+require_relative "version"
 
 module TechnicalTestsI
   class Error < StandardError; end
