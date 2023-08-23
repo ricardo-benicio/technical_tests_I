@@ -1,10 +1,11 @@
-name: Ruby
+name: Ruby Tests
 
-on:
-  [ push, pull_request ]
+on: [push, pull_request]
 
 jobs:
+  
   build:
+  
     runs-on: ubuntu-latest
 
     steps:
@@ -19,5 +20,8 @@ jobs:
         gem install bundler
         bundle install --jobs 4 --retry 3
 
+
     - name: Run the default rspec
       run: bundle exec rspec
+    - name: Run Tests
+    - run: bundle exe rspec
