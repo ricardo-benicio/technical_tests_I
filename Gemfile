@@ -10,3 +10,7 @@ gem "rake"
 gem "rspec"
 
 gem "rubocop"
+
+gem "factory_bot"
+
+gem "ffaker"
