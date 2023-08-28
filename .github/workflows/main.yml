@@ -1,24 +1,25 @@
 name: Ruby Tests
 
-on: [push, pull_request]
+on:
+  [ push, pull_request ]
 
 jobs:
   
   build:
   
     runs-on: ubuntu-latest
-   
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.2.2
-        
+
     - name: Install dependencies
       run: |
         gem install bundler
         bundle install --jobs 4 --retry 3
 
-    - name: Run Tests
-    - run: bundle exe rspec
+    - name: Run the default rspec
+      run: bundle exec rspec
