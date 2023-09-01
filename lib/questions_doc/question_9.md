@@ -1,10 +1,8 @@
 ### What are the advantages and disadvantages of ruby being a dynamically typed language?
 
-     Advantages: Flexibilidade e expressividade, Menos boilerplate, Mudanças em tempo real,
-     Fácil intregração e refatoração.
+     Advantages: Flexibility and expressiveness, Less boilerplate, Changes on the fly, Easy integration and refactoring.
      
-     Disadvantages: Erros em tempo de execução, Falta de verificação antecipada, 
-     Performance potencialmente reduzida, Documentação menos explícita.
+     Disadvantages: Runtime errors, Lack of advance check, Potentially reduced performance, Less explicit documentation.
 
      - The choice between a dynamically typed language like Ruby and a statically typed
      language depends on the needs of the project and the preferences of the development team.
