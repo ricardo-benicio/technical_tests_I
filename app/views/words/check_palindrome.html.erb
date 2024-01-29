@@ -1,0 +1,11 @@
+<h1>Verificador de Palíndromos</h1>
+
+<%= form_with(url: words_path, method: :get) do |f| %>
+  <%= f.label :word, 'Digite uma palavra:' %>
+  <%= f.text_field :word %>
+  <%= submit_tag 'Verificar' %>
+<% end %>
+
+<% if defined?@is_palindrome %>
+  <p>A palavra "<%= params[:word] %>" é <%= @is_palindrome ? 'um palíndromo' : 'não um palíndromo' %>.</p>
+<% end %>
